@@ -33,6 +33,7 @@ bl_info = {
     'wiki_url'    : 'https://github.com/miniukof/bl-paint_select',
 }
 
+
 class PaintSelect(bpy.types.Operator):
     bl_idname = "view3d.paint_select"
     bl_label = "Paint Select"
@@ -59,7 +60,9 @@ class PaintSelect(bpy.types.Operator):
         context.window_manager.modal_handler_add(self)
         return {'RUNNING_MODAL'}
 
+
 def register():
-    bpy.utils.register_class(PaintSelect)
+    bpy.utils.register_module(__name__)
+
 def unregister():
-    bpy.utils.unregister_class(PaintSelect)
+    bpy.utils.unregister_module(__name__)
