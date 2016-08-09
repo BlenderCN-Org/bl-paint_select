@@ -27,6 +27,7 @@ bl_info = {
     'name'        : "Paint Selection",
     'author'      : "miniukof",
     'description' : "Select by painting on the objects. Modo/Softimage style.",
+    'location'    : "Add shortcut to `view3d.paint_select`",
     'category'    : "Mesh",
     'blender'     : (2, 76, 11),
     'version'     : (0, 0, 2),
