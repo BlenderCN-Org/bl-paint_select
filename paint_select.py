@@ -23,18 +23,6 @@ import bpy
 from bpy.props import BoolProperty
 
 
-bl_info = {
-    'name'        : "Paint Selection",
-    'author'      : "miniukof",
-    'description' : "Select by painting on the objects. Modo/Softimage style.",
-    'location'    : "Add shortcut to `view3d.paint_select`",
-    'category'    : "Mesh",
-    'blender'     : (2, 76, 11),
-    'version'     : (0, 0, 2),
-    'wiki_url'    : 'https://github.com/miniukof/bl-paint_select',
-}
-
-
 class PaintSelect(bpy.types.Operator):
     bl_idname = "view3d.paint_select"
     bl_label = "Paint Select"
